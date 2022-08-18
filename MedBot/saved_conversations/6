@@ -1,0 +1,15 @@
+bot : Hi There! I am a medical chatbot. You can begin conversation by typing in a message and pressing enter.
+bot : Tell me your name.
+user : Lavan
+bot : tell me your age
+user : writing
+bot : Are you a Male or a Female?
+user : male
+bot : Before we ask you your symptoms, we would like to know your health status.If yout have any existing Medical Conditions or Problems, please provide them here.If you dont, you can reply with a 'no'
+bot : Can you please discribe your Symptoms
+bot : Your name?
+bot : i'd like to know your age
+bot : Are you a Male or a Female?
+bot : Tell me your name.
+bot : Before we ask you your symptoms, we would like to know your health status.If yout have any existing Medical Conditions or Problems, please provide them here.If you dont, you can reply with a 'no'
+bot : Can you please discribe your Symptoms

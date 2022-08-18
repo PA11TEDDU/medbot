@@ -1,0 +1,11 @@
+bot : Hi There! I am a medical chatbot. You can begin conversation by typing in a message and pressing enter.
+bot : Your name?
+user : Jaan
+bot : how old are you
+user : 22
+bot : Are you a Male or a Female?
+bot : Before we ask you your symptoms, we would like to know your health status.If yout have any existing Medical Conditions or Problems, please provide them here.If you dont, you can reply with a 'no'
+user : no
+bot : Can you please discribe your Symptoms
+user : shortness of breath
+bot : The most suitable medecine is for your Symptom is 'Nemia Capsules'

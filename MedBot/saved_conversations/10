@@ -1,0 +1,6 @@
+bot : Hi There! I am a medical chatbot. You can begin conversation by typing in a message and pressing enter.
+bot : Your name please?
+user : Pawan
+bot : i'd like to know your age
+user : 20
+bot : Are you a Male or a Female?

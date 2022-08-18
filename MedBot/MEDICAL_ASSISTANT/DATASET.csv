@@ -1,0 +1,88 @@
+ID,DISEASE,MEDICINE
+1,Allergy,Antihistamines
+2,anemia,Nemia Capsules
+3,cold/flu,"Paracetamol, Ibuprofen"
+4,asthama,"Fluticasone, Propostionate, Salmeterol Inhaler"
+5,alzheimers,Razadyne
+6,pregnancy,Tylenol
+7,hyperthyroid,"Propylthiouracil tablet, Methimazole"
+8,hypothyroid,Tirosint
+9,diabetes,Hetformin
+10,HIV AIDS,Truvada
+11,high blood pressure,"Lisinopril, Hygroton"
+12,Rheumatoid Arthritis,Plaquenil tablet
+13,hepatitis B,"Baraclude, Viread"
+14,Dengue,Tylenol
+15,Malaria,Chloroquine Phoshate Tablet
+16,Chicken Pox,Zovirax cream
+17,jaundice,Jaundinil Capsule
+18,Diarrhea,"Loperamide, Equate"
+19,cataract,Can-c Eye drop
+20,pneumonia,"Azithromycin, Clarithromycin"
+21,Urinary Retention,"Uroxatral, Cardura"
+22,Insomnia,"Ambien, Lunesta"
+23,Sinus Infection ,Augmentin
+24,hepatitis c,Harvoni
+25,mumps,Ibuprofen
+26,measles,Tylenol
+27,botulism,Flagyl
+28,mad cow disease,Chloroquine Phoshate Tablet
+29,meningetis,"Claforan, Rocephin"
+30,indigestion,"Rolaids, Zontac"
+31,constipation,"Linzess, Amitiza"
+32,appendicitis ,"Cefotetan Injection, Claforan"
+33,Anxiety Disorder,"Prozac, Zoloft"
+34,crohn's disease,Azulfidine
+35,narcolepsy,Provigil
+36,cystinuria,Thiola
+37,prostatitis,Co Trimoxazole
+38,Angina,Cebutral
+39,west nile virus,No Vaccine
+40,Staph Infection,Vancomycin
+41,Macular Degeneration(Age-Related Type),Lucentis Infection
+42,Retinal detachment,Lazer treatment
+43,Glaucoma,"Glaucoma Surgery, Laser Treatment"
+44,hysterectomy,Amicakacin
+45,yeast infection,Diflucan
+46,anorexia,Fluoxetine(Prozac)
+47,chronic obstructive pulmonary disease 5,Theophylline S.R.
+48,emphysema,Tiova inhaler
+49,boils,Ibuprofen-400mg
+50,keloid scar,Triamcinolane Acetonide Cream
+51,rosacea,"Azelaic Cream, Finacea Gel 15%"
+52,shingles(herpes zoster) ,Zovirax
+53,dandruff,Nizoral Anti-Dandruff Solution
+54,acne,Benozyl Peroxide Gel IP
+55,common wart,"Wartex, Dewarts"
+56,Scleroderma,Methotraxate 2.5mg Tablet
+57,Lichen planus,Omnacortil-10
+58,Dementia,Aricept 5mg
+59,hives,Clarinex
+60,bulimia nervosa,Prozac 20
+61,erectile dysfunction,"Cialis 10mg, Viagra"
+62,Enlarged Prostate Gland ,Urimax D
+63,Dysthymia (Persistent Depressive Disorder),Tofranil 10
+64, panic attack,Zoloft 100mg
+65,bipolar disorder,Lithiobid 
+66,Indigestion(Dyspepsia),Peptobismol
+67,motion sickness,Oflamac-02
+68,respiratory acidosis,Theophylline 
+69,metabolic acidosis,Polycitra
+70,acute respiratory distress syndrome,Dytor-100
+71,Addison's disease,Fludrocortisone
+72,Addisonian crisis,Cortef
+73,beriberi,Thyflox
+74,dry beriberi,Jemvit- B1
+75,thalamus and hypothalamus,Clarinex
+76,Bird Flu,Relenza
+77,bone cancer,Doxorubicin Injection
+78,bone tumour,Melphalan
+79,bronchiolitis,Zichonotide
+80,tinnitus,Elavil 25mg
+81,tonsillitis,Acetaminophen
+82,Tularemia,Gentamicin
+83,tuberculosis,"Rifampin, Isoniazid"
+84,typhus,Azithromycin
+85,Pancreatic Cancer,"Cytoxan, Doxil"
+86,hyperparathyroidism ,Calcimimetics
+87,paronychia,Amoxicillin

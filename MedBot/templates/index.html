@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="/static/jquery.min.js"></script>
+  </head>
+  <body style="background-image: url('static/saykara.jpg'); background-size: cover;">
+    <h1>Automated Healthcare Assistant</h1>
+    <div>
+      <div id="chatbox">
+        <p class="botText"><span>'Hi There! I am a medical assistant. You can begin conversation by your voice in a message and pressing enter.'</span></p>
+        <p class="botText"><span>'I can help you find out what\'s going on with a simple medical assisment.</span></p>
+      </div>
+      <div id="userInput">
+        <input id="textInput" type="hidden" name="msg"   placeholder="Message">
+        <input id="buttonInput" type="submit" value="Ok, Assist Me">
+      </div>
+      <script>
+      function sleep(ms){
+      
+      return new Promise(resolve => setTimeout(resolve,ms))
+      }
+        async function getBotResponse() {
+        
+
+          document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          await $.get("/askname").done(function(data) {
+            var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+            var userHtml = '<p class="listenText"><span>listening for name</span></p>';
+              $("#chatbox").append(userHtml);
+          
+          });
+          
+         await $.get("/getname").done(function(data) {
+            var botHtml = '<p class="userText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          });
+          
+         await  $.get("/askage").done(function(data) {
+            var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          var userHtml = '<p class="listenText"><span>listening for age</span></p>';
+          $("#chatbox").append(userHtml);
+
+          });
+          
+         await $.get("/getage").done(function(data) {
+            var botHtml = '<p class="userText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          });
+          
+          await $.get("/askgender").done(function(data) {
+            var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+             var userHtml = '<p class="listenText"><span>listening for gender</span></p>';
+              $("#chatbox").append(userHtml);   
+          });
+      
+
+         await $.get("/getgender").done(function(data) {
+            var botHtml = '<p class="userText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          });
+          
+          await $.get("/askdeases").done(function(data) {
+            var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          var userHtml = '<p class="listenText"><span>listening for existing deasese</span></p>';
+          $("#chatbox").append(userHtml);
+
+          });
+          
+          await $.get("/getdeases").done(function(data) {
+            var botHtml = '<p class="userText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          });
+          
+           await $.get("/asksymptom").done(function(data) {
+            var botHtml = '<p class="botText"><span>' + data + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          var userHtml = '<p class="listenText"><span>listening for symptom</span></p>';
+          $("#chatbox").append(userHtml);
+          });
+          
+         
+
+         await $.get("/getsymptom").done(function(data) {
+            var botHtml = '<p class="userText"><span>' + data.inp + '</span></p>';
+            $("#chatbox").append(botHtml);
+            var botHtml = '<p class="botText"><span>' + data.res + '</span></p>';
+            $("#chatbox").append(botHtml);
+            document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
+          });
+        }
+        
+         function sayWelcome() {
+        
+
+          $.get("/welcome").done(function(data) {
+            var userHtml = '<p class="userText"><span>' + data.inp + '</span></p>';
+
+            var botHtml = '<p class="botText"><span>' + data.res + '</span></p>';
+               });
+        }
+        
+        $("#textInput").keypress(function(e) {
+            if(e.which == 13) {
+                getBotResponse();
+            }
+        });
+        
+        $("#buttonInput").click(function() {
+          getBotResponse();
+        })
+        
+        $(document).ready( function() {
+        $.get("/welcome").done(function(data) {
+            var userHtml = '<p class="userText"><span>' + data.inp + '</span></p>';
+
+            var  botHtml = '<p class="botText"><span>' + data.res + '</span></p>';
+               
+        });
+    });
+      </script>
+    </div>
+  </body>
+</html>
